@@ -15,7 +15,11 @@ def main():
 
 @app.route("/dbs", methods=["GET","POST"])
 def dbs():
-    return(render_template("dbs.html"))
+    return(render_template("dbs.html"))   
+
+@app.route("/creditability", methods=["GET","POST"])  
+def creditability():
+    return(render_template("creditability.html"))
 
 @app.route("/dbs_prediction", methods=["GET","POST"])
 def dbs_prediction():
